@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Produit</title>
+    <style>
+        /* Réinitialisation des styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .titre {
+            font-size: 100px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: burlywood;
+        }
+
+        /* Cadre pour diviser la page en deux parties */
+        .cadre {
+            display: flex;
+            width: 80%;
+            height: 80%;
+            border: 2px solid #fff;
+            overflow: hidden;
+            background-color: #000; /* Couleur de fond noire */
+        }
+
+        /* Moitié gauche pour l'image */
+        .moitie {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000; /* Couleur de fond noire */
+        }
+
+        /* Moitié droite pour définir le produit */
+        .moitie:nth-child(2) {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000; /* Couleur de fond noire */
+        }
+
+        /* Image */
+        .image {
+            width: 100%; /* Utilise toute la largeur de la moitié */
+            height: 100%;
+        }
+
+        /* Conteneur pour définir le produit */
+        .definition {
+            padding: 50px; /* Augmentation de la marge intérieure */
+            text-align: center;
+        }
+
+        /* Titre */
+        .titre {
+            font-size: 24px;
+            margin-bottom: 20px; /* Augmentation de la marge inférieure */
+        }
+
+        /* Description */
+        .description {
+            font-size: 18px;
+            margin-bottom: 20px; /* Augmentation de la marge inférieure */
+        }
+
+        /* Bouton */
+        button {
+            padding: 15px 30px; /* Augmentation de la taille du bouton */
+            font-size: 15px; /* Augmentation de la taille du texte du bouton */
+            background-color: gray; /* Couleur de fond blanche */
+            color: #000; /* Couleur du texte noire */
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555; /* Couleur de fond au survol */
+            color: #fff; /* Couleur du texte au survol */
+        }
+    </style>
+</head>
+<body>
+
+<h1 class="titre">À propos de nous</h1>
+
+<!-- Cadre pour diviser la page en deux parties -->
+<div class="cadre">
+    <!-- Moitié gauche pour l'image -->
+    <div class="moitie">
+        <img class="image" src="img/cuisine-elegante-moderne-appareils-electromenagers-noirs-elegants-comptoir-marbre-etageres-flottantes_124507-112224.avif" alt="Produit">
+    </div>
+    <!-- Moitié droite pour définir le produit -->
+    <div class="moitie">
+        <div class="definition">
+            <h2 class="titre">À propos de nous</h2>
+            <p class="description">Explorez notre sélection de fours à gaz et d'équipements de cuisine de qualité supérieure ! Trouvez tout ce dont vous avez besoin pour cuisiner avec précision et style. Découvrez notre gamme dès maintenant et créez des plats délicieux avec facilité !</p>
+            <button onclick="window.location.href = 'search.php';">Découvrir</button>
+
+     
+        </div>
+    </div>
+</div>
+</body>
+</html>
